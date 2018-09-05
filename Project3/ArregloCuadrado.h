@@ -9,6 +9,7 @@ public:
 	ArregloCuadrado();
 	void AgregarCuadrado(Cuadrado *obj);
 	Cuadrado*obtenerCuadrado(int indice);
+	int get_N();
 	~ArregloCuadrado();
 
 };
@@ -33,13 +34,17 @@ void ArregloCuadrado::AgregarCuadrado(Cuadrado *obj)
 		}
 	}
 }
+//se retorna con puntero porque retornamos una variable con referencia a un cuadrado
 Cuadrado* ArregloCuadrado::obtenerCuadrado(int indice)
 {
-
+	return arreglo[indice];
 }
-
+int ArregloCuadrado::get_N()
+{
+	return *N;
+}
 
 ArregloCuadrado::~ArregloCuadrado()
 {
-
+	
 }
