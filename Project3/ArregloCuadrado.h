@@ -28,10 +28,11 @@ void ArregloCuadrado::AgregarCuadrado(Cuadrado *obj)
 		for (int i=0; i<*N;i++)
 		{
 			temporal[i] = arreglo[i];
-			temporal[*N] = obj;
-			*N = *N + 1;
-			arreglo = temporal;
+			
 		}
+		temporal[*N] = obj;
+		*N = *N + 1;
+		arreglo = temporal;
 	}
 }
 //se retorna con puntero porque retornamos una variable con referencia a un cuadrado
